@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Page Header -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+  <style>
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+  </style>
+  <title>Patrick Condra</title>
+</head>
+
+<!-- Page Body -->
+
+<body>
+  <div class="navbar">
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./PatrickCondraResume.pdf">Resume</a>
+    <div class="dropdown">
+      <button class="dropbtn">Projects 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./project1.html">Global Route & Task Generalization</a>
+        <a href="./project2.html">FairBreeze Mobile Application</a>
+        <a href="./project3.html">UFC Fight Data Analysis</a>
+        <a href="./project4.html">Book Price Comparison</a>
+      </div>
+    </div>
+    <a href="./contact.html">Contact Me</a> 
+  </div>
+  
+  <!-- <div class="headerbackground"></div> -->
+  <figure class="full-bleed"><div class="hovermouse"><h1>Project 4</h1></div></figure>
+  
+  <main>
+    <div class="secondWrapper" style="margin: auto; width: 70vw;" >
+      <h2>Less Is More: Book Price Comparison</h2>
+      <p>A website designed to help students find the cheapest sources for books.</p>
+      <div class="forthWrapper" style="margin: auto; width: 70vw;">
+        <div>
+          <h2>Background</h2>
+          <p>The user creates a list of books by inputting the ISBN or title of the book, which will be normalized through a series of regular expressions. Additionally, the user may input max or minimum prices for each book, to allow for further result refining. The list of books as well as price requirements are then passed to a JavaScript function that makes calls to multiple online store APIs (Google Books, DirectTextbooks, etc.) to find matches. The results are then shown as a list of links to the corresponding cheapest listings.</p>
+        </div>
+      </div>
+      <img src="./images/lessismore1.PNG" style="border: 7px solid #555555; max-height: 60vh;" class="center">
+    </div>
+  </main>
+  <script src="./scripts.js"></script>
+</body>
+</html>
